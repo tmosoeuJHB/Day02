@@ -2,7 +2,8 @@
 #include <unistd.h>
 
 void ft_putchar(char c) {
-	write (STDOUT_FILENO, &c, 1);
+	//write (STDOUT_FILENO, &c, 1);
+	write (1, &c, 1);
 }
 
 void ft_print_numbers(void) {
@@ -16,6 +17,6 @@ void ft_print_numbers(void) {
 
 int main(void) {
 	ft_print_numbers();
-		return 0;
+	return 0;
 }
 
