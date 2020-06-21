@@ -1,20 +1,27 @@
-#include <stdio.h>
-#include <unistd.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tmosoeu <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/19 15:48:25 by tmosoeu           #+#    #+#             */
+/*   Updated: 2020/06/19 15:56:14 by tmosoeu          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void ft_putchar(char c) {
-	write(STDOUT_FILENO, &c, 1);
-}
-void ft_print_alphabet(void) {
-	char letter; 
+#include "ft_print_alphabet.h"
+#include "ft_putchar.c"
+
+void ft_print_alphabet() {
+	char letter;
 	letter = 'a';
-	while (letter <= 'z' ) {
-		ft_putchar(letter);
-	letter++; 
-	}
 
-} 
-int main(void) {
-	ft_print_alphabet();
-	return 0;
+	while(letter <= 'z') {
+		ft_putchar(letter);
+		letter++;
+	}
+	ft_putchar('\n');
 }
+
 
