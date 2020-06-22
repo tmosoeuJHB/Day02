@@ -10,11 +10,19 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+<<<<<<< HEAD
 #include "ft_print_alphabet.h"
 #include "ft_putchar.c"
 
 void ft_print_alphabet() {
 	char letter;
+=======
+void ft_putchar(char c) {
+	write(1, &c, 1);
+}
+void ft_print_alphabet(void) {
+	char letter; 
+>>>>>>> fe946657f3489c220780474da58523faefc1255a
 	letter = 'a';
 
 	while(letter <= 'z') {
