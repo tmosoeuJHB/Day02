@@ -13,7 +13,6 @@
 
 void ft_print_alphabet(void) {
 	char letter; 
->>>>>>> fe946657f3489c220780474da58523faefc1255a
 	letter = 'a';
 
 	while(letter <= 'z') {
