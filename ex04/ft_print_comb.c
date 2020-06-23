@@ -6,10 +6,10 @@
 /*   By: tmosoeu <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/23 11:43:11 by tmosoeu           #+#    #+#             */
-/*   Updated: 2020/06/23 11:43:45 by tmosoeu          ###   ########.fr       */
+/*   Updated: 2020/06/23 13:32:13 by tmosoeu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+int ft_putchar(char c);
 
 void ft_print_var(char x, char y, char z) {
 	ft_putchar(x);
