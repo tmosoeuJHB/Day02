@@ -6,10 +6,11 @@
 /*   By: tmosoeu <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/23 11:40:36 by tmosoeu           #+#    #+#             */
-/*   Updated: 2020/06/23 11:41:07 by tmosoeu          ###   ########.fr       */
+/*   Updated: 2020/06/23 13:27:08 by tmosoeu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+int ft_putchar(char c);
 
 void ft_is_negative(int n) {
 	if (n >= 0) {
@@ -17,4 +18,5 @@ void ft_is_negative(int n) {
 	}
 	else { ft_putchar('N');
 	}
+}
 
