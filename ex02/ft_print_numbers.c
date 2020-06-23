@@ -1,10 +1,14 @@
-#include <stdio.h>
-#include <unistd.h>
-
-void ft_putchar(char c) {
-	//write (STDOUT_FILENO, &c, 1);
-	write (1, &c, 1);
-}
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tmosoeu <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/23 11:38:48 by tmosoeu           #+#    #+#             */
+/*   Updated: 2020/06/23 11:39:19 by tmosoeu          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 void ft_print_numbers(void) {
 	char digits;
@@ -13,10 +17,5 @@ void ft_print_numbers(void) {
 		ft_putchar(digits);
 		digits++;
 	}
-}
 
-int main(void) {
-	ft_print_numbers();
-	return 0;
-}
 
