@@ -1,10 +1,16 @@
-#include <stdio.h>
-#include <unistd.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_comb.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tmosoeu <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/23 11:43:11 by tmosoeu           #+#    #+#             */
+/*   Updated: 2020/06/23 11:43:45 by tmosoeu          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-int ft_putchar(char c) {
-	write(1, &c, 1);
-	return (0);
-}
+
 void ft_print_var(char x, char y, char z) {
 	ft_putchar(x);
 	ft_putchar(y);
@@ -34,9 +40,4 @@ void ft_print_comb(void){
 		x++;
 	}
 	
-}
-
-int main() {
-	ft_print_comb();
-	return(0);
 }
