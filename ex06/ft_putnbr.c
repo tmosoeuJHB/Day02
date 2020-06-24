@@ -6,22 +6,35 @@
 /*   By: tmosoeu <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/22 12:24:32 by tmosoeu           #+#    #+#             */
-/*   Updated: 2020/06/22 12:59:08 by tmosoeu          ###   ########.fr       */
+/*   Updated: 2020/06/24 09:37:25 by tmosoeu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
-#include <stdio.h>
 
+#include<unistd.h>
 
-int ft_putchar(char c){
-	write(1, &c, 1);
-	return 0;
-}
-
-void ft_putnbr(int nb) {
-	write(1, &nb, 1);
-}
-	int main()
+int ft_putchar(char c)
 {
-	ft_putnbr(42);
+	write(1, &c, 1);
+	return (c);
 }
+
+void ft_putnbr(int nb) 
+{
+	char c;
+	if(nb < 0){
+		nb = -nb;
+		ft_putchar('-');
+	}
+	if (nb < 10)
+	{
+		ft_putchar(nb + '0');
+	}
+		else
+		{
+			ft_putnbr(nb / 10);
+			ft_putnbr(nb % 10);
+		}
+}
+	
+
+
